@@ -29,6 +29,18 @@
     <string name="project_see">This is an open source project, more information please see:</string>
     <string name="project_address">https://github.com/jiangpeng79/antrace</string>
     <string name="app_version">%1$s %2$s\n</string>
-    <string name="permission_warning">This app requires write permission to your external storage. Please grand the permission.</string>
-    <string name="permission_warning_quit">This app requires write permission to your external storage. Please grand the permission from Settings and try again.</string>
+    <string name="permission_warning">This app requires write permission to your external storage. Please grant the permission.</string>
+    <string name="permission_warning_quit">This app requires write permission to your external storage. Please grant the permission from Settings and try again.</string>
+    <string name="about_updated_statement">This app is an updated version of the potrace port from antrace.
+        The app has been adapted from antrace to have a cleaner UI, and be able to be used for modern devices.
+        NJIT/Rutgers students have contributed to the code as part of their senior capstones:</string>
+    <string name="coder1">Terence Au</string>
+    <string name="coder1_git">https://github.com/Takosheen</string>
+    <string name="coder2">Bartlomiej Rutnya</string>
+    <string name="coder2_git">https://github.com/ClankerTanker</string>
+    <string name="coder3">Rubens Joseph</string>
+    <string name="coder3_git">https://github.com/rmj100</string>
+    <string name="antrace_author">Finally - the author of antrace can be contacted through </string>
+    <string name="antrace_git">The github can be found here: </string>
+    <string name="about_outro">For the future students that will be working on this project, good luck!</string>
 </resources>
