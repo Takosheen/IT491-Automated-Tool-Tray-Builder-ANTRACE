@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/select_picture"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/command_background"
+        android:drawableRight="@drawable/gallery"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/select_a_photo"
+        android:textColor="#ffeeeeee" />
+
+    <Button
+        android:id="@+id/take_picture"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/select_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/command_background"
+        android:drawableRight="@drawable/camera"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/take_a_photo"
+        android:textColor="#ffeeeeee" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/command_background"
+        android:drawableRight="@drawable/about"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/about"
+        android:textColor="#ffeeeeee" />
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Tesseract"
+        android:textColor="#0C0909"
+        android:textSize="15pt" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/company_name"
+        android:layout_centerInParent="true"
+        android:text="Automated Tool Tray"
+        android:gravity="center"
+        android:textColor="#0C0909"
+        android:textIsSelectable="false"
+        android:textSize="10pt"
+        android:layout_above="@id/take_picture"/>
+</RelativeLayout>

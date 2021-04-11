@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    //buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.jiangpeng.android.antrace"
+        minSdkVersion 14
+        targetSdkVersion 30
+
+        ndk {
+            moduleName "antrace"
+            ldLibs = ["android", "jnigraphics", "log"]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+    ndkVersion '21.1.6352462'
+
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:23.4.0'
+    implementation 'com.google.android.gms:play-services-ads:9.8.0'
+}
